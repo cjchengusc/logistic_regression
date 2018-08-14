@@ -73,3 +73,103 @@ P = plot_hypothesis_and_logistic_random_number(x=input_x, y=output_y, theta=fina
 P.plot_hypothesis_and_logistic_random_number_method()
 plt.show()
 ```
+
+### Random Training Sets
+Run the `logistic_regression.py` file using Python
+```
+python logistic_regression.py data_classification_random.csv
+```
+The output will look like this
+```
+========================================
+iteration_count =  1
+cost_function =  0.69314718056
+theta =  [[0.00025]
+ [0.005900488155428321]
+ [0.004079350796993822]]
+========================================
+iteration_count =  2
+cost_function =  0.683240419519
+theta =  [[0.00043422666344872474]
+ [0.011377430047002715]
+ [0.007802079627621637]]
+========================================
+iteration_count =  3
+cost_function =  0.674799257705
+theta =  [[0.0005579588799096167]
+ [0.016464402349599578]
+ [0.011197426574921444]]
+========================================
+iteration_count =  4
+cost_function =  0.667600231323
+theta =  [[0.0006261240622279723]
+ [0.021192826656498426]
+ [0.014292735368931124]]
+========================================
+......
+......
+========================================
+iteration_count =  49997
+cost_function =  0.255243843291
+theta =  [[-7.628616336071029]
+ [0.8630933357469219]
+ [0.6863890728329858]]
+========================================
+iteration_count =  49998
+cost_function =  0.255243075811
+theta =  [[-7.628677705074991]
+ [0.8630996000575065]
+ [0.686394721562345]]
+========================================
+iteration_count =  49999
+cost_function =  0.255242308356
+theta =  [[-7.628739073051786]
+ [0.8631058642650018]
+ [0.686400370200373]]
+========================================
+iteration_count =  50000
+cost_function =  0.255241540928
+theta =  [[-7.628800440001449]
+ [0.8631121283694113]
+ [0.6864060187470727]]
+========================================
+Learning rate =  0.005
+Final theta =  [[-7.628800440001449]
+ [0.8631121283694113]
+ [0.6864060187470727]]
+========================================
+```
+![image](https://github.com/cjchengusc/logistic_regression/blob/master/logistic_regression_convergent_random.png)
+
+### Vertical Training Sets 
+Run the `logistic_regression.py` file using Python
+```
+
+```
+The output will look like this
+```
+
+```
+![image]()
+
+### Horizontal Training Sets
+Run the `logistic_regression.py` file using Python
+```
+
+```
+The output will look like this
+```
+
+```
+![image]()
+
+### Diagonal Training Sets
+Run the `logistic_regression.py` file using Python
+```
+
+```
+The output will look like this
+```
+
+```
+![image]()
