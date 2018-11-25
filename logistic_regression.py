@@ -115,10 +115,9 @@ class plot_hypothesis_and_logistic_random_number:
         theta_2 = self.theta[2,0]
         theta_1 = self.theta[1,0]
         theta_0 = self.theta[0,0]
-        x_axis = np.arange(0.,10.,0.02)
-        hypothesis = -((theta_0 + theta_1 * x_axis) / theta_2)  # theta_2 * hypothesis + theta_1 * x_axis + theta_0 * 1 = 0 is the Decision Boundary. 
-        y_axis = hypothesis
-        plot_generator.plot(x_axis, y_axis, color='black', linestyle='solid', linewidth=2)
+        x1_axis = np.arange(0.,10.,0.02)
+        x2_axis = -((theta_0 + theta_1 * x1_axis) / theta_2)  # theta_2 * x2_axis + theta_1 * x1_axis + theta_0 * 1 = 0 is the Decision Boundary.
+        plot_generator.plot(x1_axis, x2_axis, color='black', linestyle='solid', linewidth=2)
 
 # Main function
 plt.figure()
